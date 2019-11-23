@@ -9,7 +9,7 @@ public class SetSprite : MonoBehaviour
     [SerializeField] Sprite[] allImages;
     public int SetSpriteRandom()
     {
-       // Sprite[] allImages = Resources.LoadAll<Sprite>("Texture");
+       // Sprite[] allImages = Resources.LoadAll<Sprite>("Texture");//Resourcesは直接SerializeFieldにして参照するのと比べてほぼ何も利点がないため使ってはいけない（戒め）
 
         int allImageLength = allImages.Length;
 

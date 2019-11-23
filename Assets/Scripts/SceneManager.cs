@@ -12,6 +12,7 @@ public class SceneManager : MonoBehaviour
     public SpriteRenderer bgRenderer;
     public void ShowResult()
     {
+        //できる限りGameObject.Findは避けてSerializeFieldによる参照を使いましょう
         var frontCard = cardGenerator.MakeCardFrontInstance();
         int thisResult = frontCard.GetComponent<SetSprite>().SetSpriteRandom();
         cardManager.DestroyAllCard();
