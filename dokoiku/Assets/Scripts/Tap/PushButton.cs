@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class PushButton : MonoBehaviour
 {
-    bool destroyFlag = false;
     void Update()
     {
-        if (destroyFlag)
-        {
-            Destroy(this.gameObject);
-        }
-
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject.Find("SceneManager").GetComponent<SceneManager>().ResultScreen();
-            destroyFlag = true;
+            GameObject.Find("SceneManager").GetComponent<SceneManager>().ShowResult();
+            Destroy(this.gameObject);
         }
     }
 }

@@ -5,15 +5,11 @@ using UnityEngine;
 public class CardGenerator : MonoBehaviour
 {
     public GameObject CardPrefab;
-    GameObject cardList;
+    [SerializeField]GameObject cardList;
     float span = 0.2f;
     float time = 0.2f;
     int cardNum = 0;
 
-    void Start()
-    {
-        this.cardList = GameObject.Find("CardList");
-    }
 
     // Update is called once per frame
     void Update()
@@ -24,7 +20,7 @@ public class CardGenerator : MonoBehaviour
             this.time = 0;
             if( this.cardNum < 5 )
             {
-                GameObject card = Instantiate(CardPrefab) as GameObject;
+                GameObject card = Instantiate(CardPrefab);
                 card.GetComponent<CardPrefab>().ADDCardNum(cardNum);
                 Vector3 cardVector = new Vector3(6.0f, 0.0f, 0.0f);
                 card.GetComponent<SlideObject>().enabled = true;

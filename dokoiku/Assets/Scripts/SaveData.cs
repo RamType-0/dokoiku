@@ -11,15 +11,15 @@ public class SaveData
 
     public SaveData()
     {
-        if (PlayerPrefs.HasKey("historyData01"))
+        //if (PlayerPrefs.HasKey("historyData01"))
         {
-            historyData01 = PlayerPrefs.GetInt("historyData01");
+            historyData01 = PlayerPrefs.GetInt("historyData01");//キーがなかったら初期値を返す仕様なので↑の分岐は不要
         }
-        if (PlayerPrefs.HasKey("historyData02"))
+        //if (PlayerPrefs.HasKey("historyData02"))
         {
             historyData02 = PlayerPrefs.GetInt("historyData02");
         }
-        if (PlayerPrefs.HasKey("historyData03"))
+        //if (PlayerPrefs.HasKey("historyData03"))
         {
             historyData03 = PlayerPrefs.GetInt("historyData03");
         }
