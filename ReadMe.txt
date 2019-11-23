@@ -1,6 +1,9 @@
 ReadMe
 "dokoiku"
 
+https://kuni-0930.github.io/dokoiku/
+上記にアクセスするとプレイできます。(出来るはずです。お願いします出来てください。)
+
 2019/11/17
 
 unityを使用した自身初2Dアプリケーション
