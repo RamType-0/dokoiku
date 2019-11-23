@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 public class StartSceneButton : MonoBehaviour
 {
     public void PushStartButton()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        UnitySceneManager.LoadScene("GameScene");
     }
     public void PushHistoryButton()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("HistoryScene");
+        UnitySceneManager.LoadScene("HistoryScene");
     }
 }

@@ -9,13 +9,11 @@ public class MakeCard : MonoBehaviour
 
     public GameObject MakeCardBackInstance()
     {
-        GameObject backCard = Instantiate(backCardPrefab) as GameObject;
-        return backCard;
+        return Instantiate(backCardPrefab);// as GameObject;
     }
 
     public GameObject MakeCardFrontInstance()
     {
-        GameObject frontCard = Instantiate(frontCardPrefab) as GameObject;
-        return frontCard;
+        return Instantiate(frontCardPrefab);// as GameObject;
     }
 }

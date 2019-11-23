@@ -6,26 +6,26 @@ public class SetSprite : MonoBehaviour
 {
     SpriteRenderer mySpriteRenderer;
     int imageNum;
-
+    [SerializeField] Sprite[] allImages;
     public int SetSpriteRandom()
     {
-        Sprite[] imageAll = Resources.LoadAll<Sprite>("Texture");
+       // Sprite[] allImages = Resources.LoadAll<Sprite>("Texture");
 
-        int allImageLength = imageAll.Length;
+        int allImageLength = allImages.Length;
 
         int imageNum = Random.Range(0, allImageLength - 1);
 
         mySpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        mySpriteRenderer.sprite = imageAll[imageNum];
+        mySpriteRenderer.sprite = allImages[imageNum];
 
         return imageNum;
     }
 
     public void SetSpriteSpecification( int specNum )
     {
-        Sprite[] imageAll = Resources.LoadAll<Sprite>("Texture");
+        //Sprite[] allImages = Resources.LoadAll<Sprite>("Texture");
 
         mySpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        mySpriteRenderer.sprite = imageAll[specNum];
+        mySpriteRenderer.sprite = allImages[specNum];
     }
 }

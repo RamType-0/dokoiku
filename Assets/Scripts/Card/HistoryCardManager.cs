@@ -21,23 +21,8 @@ public class HistoryCardManager : MonoBehaviour
 
         for (int cardNum = 0; cardNum < CARD_MAX; cardNum++)
         {
-            GameObject card = Instantiate(cardPrefab) as GameObject;
-            Vector3 cardVector = new Vector3(0.0f, 0.0f, 0.0f);
-
-            switch (cardNum)
-            {
-                case 0:
-                    cardVector.y = 3.0f;
-                    break;
-                case 1:
-                    cardVector.y = 0.0f;
-                    break;
-                case 2:
-                    cardVector.y = -3.0f;
-                    break;
-                default:
-                    break;
-            }
+            GameObject card = Instantiate(cardPrefab);
+            Vector3 cardVector = new Vector3(0.0f, 3*(1-cardNum), 0.0f);
             card.transform.position = cardVector;
 
             card.GetComponent<SetSprite>().SetSpriteSpecification(saveCardNum[cardNum]);

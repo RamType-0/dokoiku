@@ -391,6 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardPrefab: {fileID: 4371534140134638873, guid: 07231aa1ba9e685428afe52b38b92ee1,
     type: 3}
+  cardList: {fileID: 884242090}
 --- !u!4 &536081560
 Transform:
   m_ObjectHideFlags: 0
@@ -700,7 +701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reachPrefab: {fileID: 4423869376592325968, guid: 5552db6e28b30ae4fb6f28ee5abb31a7,
     type: 3}
-  fishPrefab: {fileID: 5097044412439702375, guid: 48a8cbd056840bb4e847d5b7f8efb314,
+  fishPrefab: {fileID: 7180928806001199886, guid: 48a8cbd056840bb4e847d5b7f8efb314,
     type: 3}
   pushPrefab: {fileID: 1587428770409428862, guid: 3c9c174c7e1a4f44a8d30d7c0b7c2e59,
     type: 3}
@@ -737,6 +738,9 @@ MonoBehaviour:
   endText: {fileID: 7244859624777213836, guid: ac714618943273b4497d3b18caca102f, type: 3}
   restartCanvas: {fileID: 3338653827301783584, guid: 1d6c6d57328422945a9063e48769bbfe,
     type: 3}
+  cardGenerator: {fileID: 536081561}
+  cardManager: {fileID: 1045382457}
+  bgRenderer: {fileID: 572953811}
 --- !u!4 &1349969076
 Transform:
   m_ObjectHideFlags: 0
